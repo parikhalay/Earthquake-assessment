@@ -72,7 +72,7 @@ A global store synchronizes the selected earthquake between the chart and the ta
 The USGS feed can return **thousands of records**. Two key optimizations keep the UI responsive:
 
 - **Virtualized table rendering** — [TanStack Virtual](https://tanstack.com/virtual/latest) renders only the rows currently visible in the viewport, keeping DOM node count low regardless of dataset size.
-- **Chart animations disabled** — Recharts animation is turned off to prevent frame drops when rendering large point clouds.
+- **Chart animations disabled** — Recharts animation is turned off to prevent frame drops when rendering large point clouds. The chart only display points with magnitute more than 2.5 to make it efficient and useful.
 
 ---
 
